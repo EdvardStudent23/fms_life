@@ -168,7 +168,12 @@ class StudentLifeFSM:
             else:
                 continue
 
-fsm = StudentLifeFSM()
-activities = str(input())
-for activity in activities:
-    fsm.send(activity)
+def fms_func():
+    fsm = StudentLifeFSM()
+    while True:
+        activities = str(input())
+        for activity in activities:
+            fsm.send(activity)
+
+if __name__ == '__main__':
+    fms_func()
