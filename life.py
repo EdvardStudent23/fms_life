@@ -169,5 +169,6 @@ class StudentLifeFSM:
                 continue
 
 fsm = StudentLifeFSM()
-for activity in str(121321123123):
+activities = input()
+for activity in activities:
     fsm.send(activity)
